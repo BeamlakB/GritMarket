@@ -7,13 +7,20 @@ app = create_app()
 def home():
     return render_template ("index.html")
 
-@app.route('/about', methods=['Get'])
+@app.route('/AvoidScams.html', methods=['Get'])
 def about():
-    return jsonify({'message': "About"})
+    return render_template ("AvoidScams.html")
 
-@app.route('/contact', methods=['Get'])
-def contact():
-    return jsonify({'message': "Contact"})
+@app.route('/Support.html', methods=['Get'])
+def support():
+    return render_template ("Support.html")
 
+@app.route('/FrequentlyAskedQuestions.html', methods=['Get'])
+def FrequentlyAskedQuestions():
+    return render_template ("FrequentlyAskedQuestions.html")
+
+@app.route('/PersonalSafetyTips.html', methods=['Get'])
+def Safteytips():
+    return render_template ("PersonalSafetyTips.html")
 if __name__ == '__main__':
     app.run (debug=True)
