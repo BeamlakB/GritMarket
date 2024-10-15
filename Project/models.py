@@ -2,10 +2,18 @@
 
 from . import  db 
 from flask_login import UserMixin
+from uuid import uuid4
 
+def get_uuid():
+    # Generate a UUID and take the first 8 characters
+    uuid_str = str(uuid4())[:3]
+
+    # Convert it to an integer
+    short_id = int(uuid_str, 16)
+    return short_id
 class User(UserMixin, db.Model):
     #when we run app.py we created the columns
-    id = db.Column (db.Integer, primary_key= True)
+    id = db.Column (db.Integer, primary_key= True, unique= True, default= get_uuid)
     username= db.Column(db.String(100), unique=True, nullable=False)
     email= db.Column(db.String(100), unique=True, nullable=False)
     password_ha= db.Column(db.String(1000), nullable=False)
