@@ -57,6 +57,9 @@ def signup ():
     new_user= User (email=email, password_ha=hashed_password, username=username3)
     db.session.add(new_user)
     db.session.commit()
+    #log in when registered 
+    session["user_id"]= new_user.id
+
     return jsonify({"id": new_user.id, "email": new_user.email})
 
 @app.route("/login", methods=["POST"])
@@ -73,7 +76,10 @@ def login_user():
     session["user_id"]= user.id
     return jsonify({"id": user.id, "email": user.email}), 200
 
-
+@app.route("/logout", methods=["POST"])
+def logout_user():
+    session.pop("user_id")
+    return "200"
 
 if __name__ == '__main__':
     app.run (debug=True)
