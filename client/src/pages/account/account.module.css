@@ -1,0 +1,89 @@
+/* Account.module.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .pageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(253, 181, 21); /* Light gray background */
+  }
+  
+  .loginBox {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    max-width: 400px;
+    width: 100%; /* Responsive width */
+    border-radius: 25px;
+  }
+  
+  .title {
+    font-size: 24px;
+    font-weight: 600;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .formGroup {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .label {
+    font-size: 20px;
+    color: #666;
+    margin-bottom: 5px;
+  }
+  
+  .input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 9px;
+  }
+  
+  .button {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: hsl(35, 91%, 68%); /* Blue color */
+    color: rgb(19, 19, 19);
+    border: none;
+    border-radius: 9px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-weight: 600;
+  }
+  
+  .button:hover {
+    background-color: rgb(253, 181, 21); /* Darker blue on hover */
+  }
+  
+  .passwordWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .toggleButton {
+    margin-left: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #007bff;
+    font-size: 14px;
+  }
+  
+  .toggleButton:hover {
+    text-decoration: underline;
+  }
