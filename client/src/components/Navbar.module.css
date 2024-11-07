@@ -1,0 +1,40 @@
+
+.navbar {
+    background-color: #f0f0f0; /* Light gray background */
+    padding: 10px 0;
+    border-bottom: 1px solid #ccc; /* Subtle border */
+    font-family: Arial, sans-serif;
+  }
+  
+  .navContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .navLinks {
+    display: flex;
+    gap: 15px; /* Space between links */
+  }
+  
+  .link {
+    color: #0066cc; /* Craigslist blue color */
+    font-size: 14px;
+    text-decoration: none;
+    padding: 5px;
+  }
+  
+  .link:hover {
+    text-decoration: underline;
+  }
+  
