@@ -1,8 +1,10 @@
 import React from 'react'
+import styles from "./InfoPage.module.css";
 
 export const FAQ: React.FC = () => {
   return (
-   <div>
+   <div className={styles.centeredBody}>
+   <div className={styles.infopage}>
 
         <h1>Frequently Asked Questions</h1>
 
@@ -35,6 +37,7 @@ export const FAQ: React.FC = () => {
         <ul>
         <li>From the home page, you may click on one of the subcategories to browse through a filtered page of postings.</li>
         </ul>
+   </div>
    </div>
   )
 }

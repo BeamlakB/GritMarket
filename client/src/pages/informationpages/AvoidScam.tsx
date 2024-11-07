@@ -1,8 +1,11 @@
 import React from 'react'
-
-const AvoidScam = () => {
+import styles from "./InfoPage.module.css"
+const AvoidScam: React.FC = () => {
   return (
-    <div><h2>Avoid Scams</h2>
+    <div className={styles.centeredBody}>
+    <div className={styles.infopage}>
+      
+      <h2>Avoid Scams</h2>
 
     <p>To avoid scams, the Grit Marketplace team highly suggests that you meet with sellers in-person on public UMBC campus locations such as:</p>
     <ul>
@@ -16,8 +19,12 @@ const AvoidScam = () => {
   
     <p>Do not provide or accept payments before meeting in person.</p>
   
-    <p>Report possible scams to the Grit Marketplace support center.</p></div>
+    <p>Report possible scams to the Grit Marketplace support center.</p>
+  </div>
+  </div>
+  
   )
+  
 }
 
 export default AvoidScam

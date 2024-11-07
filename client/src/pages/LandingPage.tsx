@@ -30,13 +30,23 @@ const LandingPage: React.FC = () => {
         <div className="left-section">
         <h1 style={{ margin: '10px', fontSize: '30px' }}>Grit Marketplace</h1>    
         <br />
-        {user != null ?
-        (<button type="button">View Profile</button>
+        {user ? (
+    <><button type="button">View Profile</button>
+     <button type="button" onClick={logoutUser}>Logout</button>
 
-        ):(
-            <a href="/login"> <button type="button">Login</button></a>
-        )
-        }
+    </>
+    
+  ) : (
+    <>
+      <a href="/login">
+        <button type="button">Login</button>
+      </a>
+      <a href="/signup">
+        <button type="button">Create Account</button>
+      </a>
+    </>
+  )
+  }
         
         <br />
 
@@ -52,7 +62,7 @@ const LandingPage: React.FC = () => {
               <a href="/AvoidScam">Avoid Scams</a>
             </li>
             <li>
-              <a href="/SafetyTips">Personal Safety Tips</a>
+              <a href="/SafteyTips">Personal Safety Tips</a>
             </li>
             <li>
               <a href="/Support">Contact Grit Marketplace Support</a>

@@ -1,8 +1,9 @@
 import React from 'react'
-
-const SafteyTips = () => {
+import styles from './InfoPage.module.css'
+const SafteyTips: React.FC = () => {
   return (
-    <div>
+    <div className={styles.centeredBody}>
+    <div className={styles.infopage}>
 
     <h2>Personal Safety Tips</h2>
 
@@ -15,6 +16,7 @@ const SafteyTips = () => {
     <li>Bring a friend or group of friends with you! This is especially important when dealing with high value items.</li>
     <li>Tell someone where you are going.</li>
     </ul>
+    </div>
     </div>
   )
 }
