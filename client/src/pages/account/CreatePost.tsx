@@ -2,7 +2,6 @@ import React from 'react'
 import { useState, useEffect } from "react";
 import httpsClient from "../../httpsClient";
 import styles from "./account.module.css"
-import { StringifyOptions } from 'querystring';
 
 const CreatePost = () =>{
     //if user is logged in.... 
@@ -161,9 +160,10 @@ const CreatePost = () =>{
     //Form Submission
     const SubmitForm = async (e:React.FormEvent) => {
         e.preventDefault();
+        console.log("Formdata File", formData.image.file);
 
         const post = new FormData();
-        if(formData.image.file) {
+       if(formData.image.file) {
             post.append("file", formData.image.file);
         }
         if(formData.image.preview){
@@ -317,5 +317,6 @@ const CreatePost = () =>{
         </div>    
     );
 };
+
 
 export default CreatePost;

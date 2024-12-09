@@ -7,8 +7,8 @@ const Navbar: React.FC = () => {
       <div className={styles.navContainer}>
         <a href="/" className={styles.logo}>UMBC Market</a>
         <div className={styles.navLinks}>
-          <a href="/for-sale" className={styles.link}>post</a>
-          <a href="/jobs" className={styles.link}>myacct</a> 
+          <a href="/add-post" className={styles.link}> create post</a>
+          <a href="/profile" className={styles.link}>myacct</a> 
         </div>
       </div>
     </nav>
