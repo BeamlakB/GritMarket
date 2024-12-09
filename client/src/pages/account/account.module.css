@@ -7,6 +7,12 @@
     font-family: "Poppins", sans-serif;
   }
   
+  html, body{
+    height: 100%;
+    overflow: auto;
+    margin: 0;
+  }
+
   .pageContainer {
     display: flex;
     justify-content: center;
@@ -86,4 +92,96 @@
   
   .toggleButton:hover {
     text-decoration: underline;
+  }
+
+
+  /*Create Post styles*/
+  .imagePreview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    max-width: 100%;
+    height: auto;
+    overflow: hidden;
+  }
+
+  .previewImg{
+    max-width: 100%;
+    max-height: 300px;
+    object-fit: contain;
+    border-radius: 8px;
+  }
+
+  .postBox {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    max-width: 650px;
+    width: 100%; /* Responsive width */
+    border-radius: 25px;
+    min-height: 500px;
+  }
+
+  .postPageContainer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    background-color: rgb(253, 181, 21); /* Light gray background */
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: auto;
+    padding-top: 40px;
+  }
+  .profileImage{
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  .profileContainer{
+    width: 175px;
+    height: 175px;
+    overflow: hidden;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .username{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 10px;
+    color: #333;
+    margin-left: 10px;
+  }
+  .profileBox {
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    max-width: 650px;
+    width: 100%; /* Responsive width */
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 20px;
+    margin-left: 20px;
+  }
+  .profileWrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .alignContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px;
   }

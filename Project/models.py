@@ -22,6 +22,22 @@ class User(UserMixin, db.Model):
     def __repr__(self):
         return '<User %r>' % self.username
 
-    
+# Create a blog post model
+class Posts(db.Model):
+    id = db.Column(db.Integer, primary_key=True)
+    imagePath = db.Column(db.String(255)) #path to image file
+    imagePreview = db.Column(db.String(255)) #preview the image file
+    mainCategory = db.Column(db.String(255))
+    subCategory = db.Column(db.String(255))
+    title = db.Column(db.String(255))
+    description = db.Column(db.Text)
+    price = db.Column(db.Integer)
+    author = db.Column(db.String(255)) # will eventually turn author into the user itself
+    date_posted = db.Column(db.DateTime, server_default=db.func.now())
+
+    def __repr__(self):
+        return f' <Post {self.title}>'
+
+
 
 

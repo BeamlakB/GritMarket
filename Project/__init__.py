@@ -35,6 +35,7 @@ def create_app():
 
     with app.app_context():
         from .models import User
+        from .models import Posts
         db.create_all()
 
         return app

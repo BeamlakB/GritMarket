@@ -91,6 +91,7 @@ const LandingPage: React.FC = () => {
                 <tr><a href="/">Hats</a></tr>
                 <tr><a href="/">Vintage Clothing</a></tr>
                 <tr><a href="/">Rings</a></tr>
+                <tr><a href="/">Body Care</a></tr>
                 <tr><a href="/">Other</a></tr>
               </tbody>
               <thead>
@@ -145,7 +146,7 @@ const LandingPage: React.FC = () => {
               <tbody>
                 <tr><a href="/">Concert Tickets</a></tr>
                 <tr><a href="/">UMBC Events</a></tr>
-                <tr><a href="/">Sport Tickets</a></tr>
+                <tr><a href="/">Sport Event Tickets</a></tr>
               </tbody>
             </table>
           </div>   
