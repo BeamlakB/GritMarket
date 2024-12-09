@@ -3,24 +3,36 @@
       "id": 1,
       "name": "Book",
       "price": 10.99,
+      "description": "",
       "imgUrl": "/imgs/book.jpg"
     },
     {
       "id": 2,
       "name": "Computer",
       "price": 1199,
+      "description": "",
       "imgUrl": "/imgs/computer.jpg"
     },
     {
       "id": 3,
       "name": "Banana",
       "price": 1.05,
+      "description": "",
       "imgUrl": "/imgs/banana.jpg"
     },
     {
       "id": 4,
       "name": "Car",
+      "description": "",
       "price": 14000,
       "imgUrl": "/imgs/car.jpg"
-    }
+    },
+    {
+      "id":5,
+      "name": "HairBands",
+      "price": 10,
+      "description": "",
+      "imgUrl": "https://images.craigslist.org/01616_aqsAyUZf799_0x20oM_600x450.jpg"
+      
+  }
   ]

@@ -70,7 +70,7 @@ const LandingPage: React.FC = () => {
           </ul>
         </nav>
 
-        <img src="/Project/templates/Home-dog.png" alt="retriever" style={{ width: 'auto', height: 'auto' }} />
+        <img src="../../public/imgs/Home-dog.png" alt="" style={{ width: 'auto', height: 'auto' }} />
       </div>
         
       <div className="right-section">
@@ -91,7 +91,7 @@ const LandingPage: React.FC = () => {
                 <tr><a href="/">Hats</a></tr>
                 <tr><a href="/">Vintage Clothing</a></tr>
                 <tr><a href="/">Rings</a></tr>
-                <tr><a href="/">Other</a></tr>
+                <tr><a href="/fashion">Other</a></tr>
               </tbody>
               <thead>
                 <tr>
@@ -108,7 +108,7 @@ const LandingPage: React.FC = () => {
                 <tr><a href="/">Smart Watches</a></tr>
                 <tr><a href="/">Calculators</a></tr>
                 <tr><a href="/">USB Drives</a></tr>
-                <tr><a href="/">Other</a></tr>
+                <tr><a href="/electronics">Other</a></tr>
               </tbody>
             </table>
           </div>
@@ -135,7 +135,7 @@ const LandingPage: React.FC = () => {
                 <tr><a href="/">Camping Equipment</a></tr>
                 <tr><a href="/">Gardening Supplies</a></tr>
                 <tr><a href="/">Trading Cards</a></tr>
-                <tr><a href="/">Other</a></tr>
+                <tr><a href="/toys">Other</a></tr>
               </tbody>
               <thead>
                 <tr>
@@ -146,6 +146,8 @@ const LandingPage: React.FC = () => {
                 <tr><a href="/">Concert Tickets</a></tr>
                 <tr><a href="/">UMBC Events</a></tr>
                 <tr><a href="/">Sport Tickets</a></tr>
+                <tr><a href="/tickets">other</a></tr>
+
               </tbody>
             </table>
           </div>   

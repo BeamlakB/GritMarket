@@ -56,6 +56,7 @@ export const LoginPage: React.FC = () => {
           </div>
         </form>
         </div>
+        
         <button className={styles.button} type="button" onClick={() => logInUser()}> Login</button>
         <a href="/Support"><h4 ><center>Forgot Passowrd</center></h4></a>
         <h4><center>New to Grit Marketplace ??</center> </h4>

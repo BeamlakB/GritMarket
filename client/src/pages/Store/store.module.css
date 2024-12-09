@@ -1,0 +1,9 @@
+@import 'bootstrap/dist/css/bootstrap.min.css';
+.onepage {
+    padding: 5px;
+    background-color:rgb(253, 181, 21);
+
+}
+.card {
+    background-color: rgb(230, 219, 197);
+}
