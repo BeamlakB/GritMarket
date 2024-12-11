@@ -31,7 +31,7 @@ const LandingPage: React.FC = () => {
         <h1 style={{ margin: '10px', fontSize: '30px' }}>Grit Marketplace</h1>    
         <br />
         {user ? (
-    <><button type="button">View Profile</button>
+    <> <a href="/profile" ><button type="button">View Profile</button> </a>
      <button type="button" onClick={logoutUser}>Logout</button>
 
     </>

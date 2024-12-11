@@ -2,6 +2,7 @@ import React from 'react'
 import { useState, useEffect } from "react";
 import httpsClient from "../../httpsClient";
 import styles from "./account.module.css"
+import { Container, Row, Col, Card} from "react-bootstrap"; // Import Bootstrap components
 
 const UserProfile = () =>{
     const [userName, setUserName] = useState<string>("");
@@ -60,17 +61,37 @@ const UserProfile = () =>{
                     <h4>Email: {email}</h4>                    
                 </div>
             </div>
-            <div className={styles.profileBox}>
+
+            <div className={styles.postBox}>
                 <h1>Posts</h1>
                 {posts.length > 0 ?(
-                    posts.map((post, index) => (
-                        <div key={index} className={styles.post}>
-                            <img src={post.imagePreview} alt={post.title} className={styles.postimage} />
-                            <h3>{post.title}</h3>
-                            <p>{post.descritpion}</p>
-                            <p>{post.price}</p>
-                        </div>
-                    ))
+                   
+                   <Container fluid>
+                   <Row md={2} xs={1} lg={4} className="g-4"> {/* Grid layout */}
+                     {posts.map((post, index) => (
+                       <Col key={index}>
+                         <Card className="h-100">
+                           <Card.Img
+                             variant="top"
+                             src={post.imagePreview}
+                             alt={post.title}
+                             style={{ height: "100px", width:"100px", objectFit: "scale-down" }}
+                           />
+                           <Card.Body>
+                             <Card.Title>{post.title}</Card.Title>
+                             <Card.Text>
+                               {post.description}
+                             </Card.Text>
+                             <Card.Text className="fw-bold">
+                               ${post.price}
+                             </Card.Text>
+                           </Card.Body>
+                         </Card>
+                       </Col>
+                     ))}
+                   </Row>
+                 </Container>
+                   
                 ) : (
                     <p>No posts available.</p>
                 )}

@@ -6,6 +6,12 @@ import { alignPropType } from "react-bootstrap/esm/types";
 export const LoginPage: React.FC = () => {
   const [email, setEmail] = useState<string> (" ");
   const [password, setPassword] = useState<string>("");
+  const [passwordVisible, setPasswordVisible] = useState(false);
+  
+  const togglePasswordVisibility = () => {
+    setPasswordVisible(!passwordVisible);
+  };
+  
   const logInUser= async () => {
     console.log(email,password);
     //check if login credential is correct 
@@ -48,18 +54,30 @@ export const LoginPage: React.FC = () => {
         <form>
         <div className={styles.formGroup}>
            <label className={styles.label}>Password </label>
-            <input   className={styles.input} type = "text"
+            <input   
+            className={styles.input} 
             placeholder="Password" 
-             value={password} 
-             onChange={(e) => setPassword(e.target.value)}
-             id = ""/>
+            value={password} 
+            onChange={(e) => setPassword(e.target.value)}
+            type={passwordVisible ? "text" : "password"}
+            name="password"
+            id="password"
+             />
+            <button
+            type="button"
+            onClick={togglePasswordVisibility}
+            className={styles.toggleButton}
+            >
+            {passwordVisible ? "Hide" : "Show"}
+            </button>
+
           </div>
         </form>
         </div>
         
-        <button className={styles.button} type="button" onClick={() => logInUser()}> Login</button>
-        <a href="/Support"><h4 ><center>Forgot Passowrd</center></h4></a>
-        <h4><center>New to Grit Marketplace ??</center> </h4>
+        <button className={styles.button} type="button" onClick={() => logInUser()} > Login</button>
+        <a href="/Support"><p ><center>Forgot Passowrd</center></p></a>
+        <h5><center>New to Grit Marketplace ??</center> </h5>
         <a href="/signup"><p><center> Join now</center></p></a>
 
         

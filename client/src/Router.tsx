@@ -11,8 +11,9 @@ import SafteyTips from "./pages/informationpages/SafteyTips";
 import Navbar from "./components/Navbar";
 import Store from "./pages/Store/Store";
 import ItemDetails from "./pages/Store/ItemDetails"; // Import the new page
-import CreatePost from "./pages/account/CreatePost"
 import CreatePost from "./pages/account/CreatePost";
+
+
 const Router = () => {
     return (
         <BrowserRouter>
