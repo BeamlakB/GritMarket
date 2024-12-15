@@ -12,7 +12,8 @@ import Navbar from "./components/Navbar";
 import Store from "./pages/Store/Store";
 import ItemDetails from "./pages/Store/ItemDetails"; // Import the new page
 import CreatePost from "./pages/account/CreatePost";
-
+import CategoryItems from "./pages/Store/CategoryItems";
+import ProductDetail from "./pages/Store/PostDetail";
 
 const Router = () => {
     return (
@@ -37,6 +38,9 @@ const Router = () => {
                 <Route path="*" element={<NotFound/>}/>
                 <Route path="/add-post" element={<CreatePost/>}/>
                 <Route path="/profile" element={<Profile/>}/>
+                <Route path="/cat/:mainCategory/:subCategory" element={<CategoryItems />} />
+                <Route path="/cat/:mainCategory/:subCategory/:id" element={<ProductDetail />} />
+
             </Routes>
         </BrowserRouter>
     );

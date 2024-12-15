@@ -179,6 +179,70 @@ def my_Profile():
     } for post in posts]
     return jsonify(post_data)
 
+# Route to fetch products filtered by mainCategory and subCategory
+@app.route('/api/products', methods=['GET'])
+def get_products():
+    main_category = request.args.get('mainCategory')
+    sub_category = request.args.get('subCategory')
+
+    if not main_category or not sub_category:
+        return jsonify({"error": "mainCategory and subCategory are required"}), 400
+
+    # Query the database to filter products
+    try:
+        products = Posts.query.filter_by(
+            mainCategory=main_category,
+            subCategory=sub_category
+        ).all()
+        #get username
+        
+        # Serialize query results into JSON
+        result = [
+            {
+                "id": product.id,
+                "title": product.title,
+                "price": product.price,
+                "mainCategory": product.mainCategory,
+                "subCategory": product.subCategory,
+                "image": product.imagePreview,
+                "description": product.description,
+                "User": product.author,
+                "email": User.query.filter_by(id=product.author[4:]).first().email if User.query.filter_by(id=product.author[4:]).first() else None
+
+            }
+            for product in products
+        ]
+
+        return jsonify(result), 200
+
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
+    
+# Route to fetch product by ID
+@app.route('/api/products/<int:id>', methods=['GET'])
+def get_product_id(id):
+    # Fetch product by ID
+    product = Posts.query.get(id)
+    
+    if not product:
+        return jsonify({'message': 'Product not found'}), 404
+    
+    # Prepare product data to return as JSON
+    product_data = {
+        'id': product.id,
+        'title': product.title,
+        'price': product.price,
+        'description': product.description,
+        'image': product.imagePreview,
+        'mainCategory': product.mainCategory,
+        'subCategory': product.subCategory,
+        'user':  product.author,
+        'User':User.query.filter_by(id=product.author[4:]).first().username if User.query.filter_by(id=product.author[4:]).first() else None,
+        "email": User.query.filter_by(id=product.author[4:]).first().email if User.query.filter_by(id=product.author[4:]).first() else None
+
+    }
+
+    return jsonify(product_data)
 
 if __name__ == '__main__':
     app.run (debug=True)

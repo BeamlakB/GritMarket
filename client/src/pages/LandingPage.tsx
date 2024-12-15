@@ -83,15 +83,15 @@ const LandingPage: React.FC = () => {
                 </tr>
               </thead>
               <tbody>
-                <tr><a href="/">Pre-owned Clothing</a></tr>
-                <tr><a href="/">Brand New Clothing</a></tr>
-                <tr><a href="/">Shoes</a></tr>
-                <tr><a href="/">Necklaces</a></tr>
-                <tr><a href="/">Bags</a></tr>
-                <tr><a href="/">Hats</a></tr>
-                <tr><a href="/">Vintage Clothing</a></tr>
-                <tr><a href="/">Rings</a></tr>
-                <tr><a href="/fashion">Other</a></tr>
+              <tr><a href="/cat/Fashion%20%26%20Accessories/Pre-owned%20Clothing">Pre-owned Clothing</a></tr>
+              <tr><a href="/cat/Fashion%20%26%20Accessories/Brand%20New%20Clothing">Brand New Clothing</a></tr>
+              <tr><a href="/cat/Fashion%20%26%20Accessories/Shoes">Shoes</a></tr>
+              <tr><a href="/cat/Fashion%20%26%20Accessories/Necklaces">Necklaces</a></tr>
+              <tr><a href="/cat/Fashion%20%26%20Accessories/Bags">Bags</a></tr>
+              <tr><a href="/cat/Fashion%20%26%20Accessories/Hats">Hats</a></tr>
+              <tr><a href="/cat/Fashion%20%26%20Accessories/Vintage%20Clothing">Vintage Clothing</a></tr>
+              <tr><a href="/cat/Fashion%20%26%20Accessories/Rings">Rings</a></tr>
+              <tr><a href="/fashion">Other</a></tr>
               </tbody>
               <thead>
                 <tr>
@@ -99,15 +99,15 @@ const LandingPage: React.FC = () => {
                 </tr>
               </thead>
               <tbody>
-                <tr><a href="/">Computers</a></tr>
-                <tr><a href="/">Laptops</a></tr>
-                <tr><a href="/">Smartphones</a></tr>
-                <tr><a href="/">TVs</a></tr>
-                <tr><a href="/">Gaming Consoles</a></tr>
-                <tr><a href="/">Cables & Cords</a></tr>
-                <tr><a href="/">Smart Watches</a></tr>
-                <tr><a href="/">Calculators</a></tr>
-                <tr><a href="/">USB Drives</a></tr>
+              <tr><a href="/cat/Electronics%20%26%20Accessories/Computers">Computers</a></tr>
+              <tr><a href="/cat/Electronics%20%26%20Accessories/Laptops">Laptops</a></tr>
+              <tr><a href="/cat/Electronics%20%26%20Accessories/Smartphones">Smartphones</a></tr>
+              <tr><a href="/cat/Electronics%20%26%20Accessories/TVs">TVs</a></tr>
+              <tr><a href="/cat/Electronics%20%26%20Accessories/Gaming%20Consoles">Gaming Consoles</a></tr>
+              <tr><a href="/cat/Electronics%20%26%20Accessories/Cables%20%26%20Cords">Cables & Cords</a></tr>
+              <tr><a href="/cat/Electronics%20%26%20Accessories/Smart%20Watches">Smart Watches</a></tr>
+              <tr><a href="/cat/Electronics%20%26%20Accessories/Calculators">Calculators</a></tr>
+              <tr><a href="/cat/Electronics%20%26%20Accessories/USB%20Drives">USB Drives</a></tr>
                 <tr><a href="/electronics">Other</a></tr>
               </tbody>
             </table>
@@ -121,21 +121,21 @@ const LandingPage: React.FC = () => {
                 </tr>
               </thead>
               <tbody>
-                <tr><a href="/">Collectibles</a></tr>
-                <tr><a href="/">Toys</a></tr>
-                <tr><a href="/">Board Games</a></tr>
-                <tr><a href="/">Card Games</a></tr>
-                <tr><a href="/">Puzzles</a></tr>
-                <tr><a href="/">Musical Instruments</a></tr>
-                <tr><a href="/">Sports Equipment</a></tr>
-                <tr><a href="/">Books</a></tr>
-                <tr><a href="/">CDs & Vinyl Records</a></tr>
-                <tr><a href="/">Art Supplies</a></tr>
-                <tr><a href="/">Handcrafted Items</a></tr>
-                <tr><a href="/">Camping Equipment</a></tr>
-                <tr><a href="/">Gardening Supplies</a></tr>
-                <tr><a href="/">Trading Cards</a></tr>
-                <tr><a href="/toys">Other</a></tr>
+              <tr><a href="/cat/Hobbies%20%26%20Games/Collectibles">Collectibles</a></tr>
+              <tr><a href="/cat/Hobbies%20%26%20Games/Toys">Toys</a></tr>
+              <tr><a href="/cat/Hobbies%20%26%20Games/Board%20Games">Board Games</a></tr>
+              <tr><a href="/cat/Hobbies%20%26%20Games/Card%20Games">Card Games</a></tr>
+              <tr><a href="/cat/Hobbies%20%26%20Games/Puzzles">Puzzles</a></tr>
+              <tr><a href="/cat/Hobbies%20%26%20Games/Musical%20Instruments">Musical Instruments</a></tr>
+              <tr><a href="/cat/Hobbies%20%26%20Games/Sports%20Equipment">Sports Equipment</a></tr>
+              <tr><a href="/cat/Hobbies%20%26%20Games/Books">Books</a></tr>
+              <tr><a href="/cat/Hobbies%20%26%20Games/CDs%20%26%20Vinyl%20Records">CDs & Vinyl Records</a></tr>
+              <tr><a href="/cat/Hobbies%20%26%20Games/Art%20Supplies">Art Supplies</a></tr>
+              <tr><a href="/cat/Hobbies%20%26%20Games/Handcrafted%20Items">Handcrafted Items</a></tr>
+              <tr><a href="/cat/Hobbies%20%26%20Games/Camping%20Equipment">Camping Equipment</a></tr>
+              <tr><a href="/cat/Hobbies%20%26%20Games/Gardening%20Supplies">Gardening Supplies</a></tr>
+              <tr><a href="/cat/Hobbies%20%26%20Games/Trading%20Cards">Trading Cards</a></tr>
+              <tr><a href="/toys">Other</a></tr>
               </tbody>
               <thead>
                 <tr>
@@ -143,9 +143,9 @@ const LandingPage: React.FC = () => {
                 </tr>
               </thead>
               <tbody>
-                <tr><a href="/">Concert Tickets</a></tr>
-                <tr><a href="/">UMBC Events</a></tr>
-                <tr><a href="/">Sport Tickets</a></tr>
+              <tr><a href="/cat/Tickets%20%26%20Events/Concert%20Tickets">Concert Tickets</a></tr>
+                <tr><a href="/cat/Tickets%20%26%20Events/UMBC%20Events">UMBC Events</a></tr>
+                <tr><a href="/cat/Tickets%20%26%20Events/Sport%20Tickets">Sport Tickets</a></tr>
                 <tr><a href="/tickets">other</a></tr>
 
               </tbody>

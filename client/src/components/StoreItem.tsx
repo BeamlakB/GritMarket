@@ -13,9 +13,10 @@ type StoreItemProps = {
 
 const StoreItem: React.FC<StoreItemProps> = ({ name, price, image, id }) => {
   const navigate = useNavigate();
-
+  const currentPath = window.location.pathname;
   const handleCardClick = () => {
-    navigate(`/item/${id}`); // Navigate to the item details page
+    
+    navigate(`${currentPath}/${id}`); // Navigate to the item details page
   };
   useEffect(() => {
     const link = document.createElement('link');
@@ -50,7 +51,7 @@ const StoreItem: React.FC<StoreItemProps> = ({ name, price, image, id }) => {
             variant="primary"
             onClick={(e) => {
               e.stopPropagation(); // Prevent triggering the card click
-              navigate(`/item/${id}`);
+              navigate(`${currentPath}/${id}`);
             }}
           >
            Contact Seller 
